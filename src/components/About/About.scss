@@ -1,0 +1,46 @@
+/**
+ * About Component Styles
+ */
+
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+  background-color: var(--color-background);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: $spacing-xl;
+  align-items: center;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+  }
+}
+
+.about-image {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-lg;
+  }
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.about-paragraph {
+  margin-bottom: $spacing-md;
+  color: var(--color-text-light);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+

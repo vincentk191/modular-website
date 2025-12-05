@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
-import './ScrollToTop.css';
+import './ScrollToTop.scss';
 
 /**
  * ScrollToTop Component

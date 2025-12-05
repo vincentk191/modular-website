@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
-import './Projects.css';
+import './Projects.scss';
 
 /**
  * Projects Component

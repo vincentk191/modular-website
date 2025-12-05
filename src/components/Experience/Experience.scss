@@ -1,0 +1,126 @@
+/**
+ * Experience Component Styles
+ */
+
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.experience {
+  background-color: var(--color-background);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 50px;
+
+  @include mobile {
+    padding-left: 30px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, $color-primary, $color-secondary);
+
+    @include mobile {
+      left: 10px;
+    }
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: $spacing-xl;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -38px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  @include gradient-primary();
+  border-radius: $radius-full;
+  @include flex-center();
+  color: white;
+  font-size: 1.25rem;
+  box-shadow: $shadow-md;
+  z-index: 1;
+
+  @include mobile {
+    left: -28px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+.timeline-content {
+  background-color: var(--color-background-alt);
+  padding: $spacing-lg;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-md;
+  @include transition(transform);
+  @include transition(box-shadow);
+
+  &:hover {
+    transform: translateX(5px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.position {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: $spacing-xs;
+}
+
+.company {
+  font-size: 1.25rem;
+  color: $color-primary;
+  margin-bottom: $spacing-md;
+}
+
+.experience-meta {
+  display: flex;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+  margin-bottom: $spacing-md;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.responsibilities {
+  list-style: none;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding-left: $spacing-md;
+    margin-bottom: $spacing-sm;
+    color: var(--color-text-light);
+    line-height: 1.6;
+
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: $color-primary;
+      font-weight: bold;
+    }
+  }
+}
+

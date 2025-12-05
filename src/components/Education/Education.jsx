@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGraduationCap, FaMapMarkerAlt, FaCalendar } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
-import './Education.css';
+import './Education.scss';
 
 /**
  * Education Component

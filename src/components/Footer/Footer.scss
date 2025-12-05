@@ -2,9 +2,12 @@
  * Footer Component Styles
  */
 
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .footer {
   background-color: var(--color-background-alt);
-  padding: var(--spacing-xl) 0;
+  padding: $spacing-xl 0;
   border-top: 1px solid var(--color-border);
 }
 
@@ -15,27 +18,25 @@
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-}
+  gap: $spacing-md;
+  margin-bottom: $spacing-md;
 
-.footer-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-size: 1.25rem;
-  transition: all var(--transition-base);
-}
+  a {
+    @include flex-center();
+    width: 45px;
+    height: 45px;
+    border-radius: $radius-full;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: 1.25rem;
+    @include transition();
 
-.footer-social a:hover {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: white;
-  transform: translateY(-3px);
+    &:hover {
+      @include gradient-primary();
+      color: white;
+      transform: translateY(-3px);
+    }
+  }
 }
 
 .footer-text {
@@ -48,7 +49,7 @@
 }
 
 .heart {
-  color: #ef4444;
+  color: $color-error;
   animation: heartbeat 1.5s ease-in-out infinite;
 }
 

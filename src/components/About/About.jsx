@@ -1,6 +1,6 @@
 import React from 'react';
 import { portfolioData } from '../../data/portfolioData';
-import './About.css';
+import './About.scss';
 
 /**
  * About Component

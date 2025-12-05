@@ -1,0 +1,64 @@
+/**
+ * SCSS Variables
+ * 
+ * All design tokens and variables for the portfolio.
+ * These can be easily customized to change the entire theme.
+ */
+
+// Colors - Light Mode
+$color-primary: #3b82f6;
+$color-primary-dark: #2563eb;
+$color-secondary: #8b5cf6;
+$color-accent: #06b6d4;
+
+$color-text: #1f2937;
+$color-text-light: #6b7280;
+$color-background: #ffffff;
+$color-background-alt: #f9fafb;
+$color-border: #e5e7eb;
+
+$color-success: #10b981;
+$color-error: #ef4444;
+$color-warning: #f59e0b;
+
+// Colors - Dark Mode
+$color-text-dark: #f9fafb;
+$color-text-light-dark: #d1d5db;
+$color-background-dark: #111827;
+$color-background-alt-dark: #1f2937;
+$color-border-dark: #374151;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-2xl: 4rem;
+
+// Typography
+$font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-mono: 'Courier New', monospace;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+$shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+
+// Border Radius
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 1rem;
+$radius-full: 9999px;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 968px;
+$breakpoint-desktop: 1200px;

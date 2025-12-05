@@ -1,0 +1,89 @@
+/**
+ * Education Component Styles
+ */
+
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.education {
+  background-color: var(--color-background-alt);
+}
+
+.education-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.education-card {
+  display: flex;
+  gap: $spacing-lg;
+  @include card();
+  padding: $spacing-lg;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-lg;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.education-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  @include gradient-primary();
+  border-radius: $radius-full;
+  @include flex-center();
+  color: white;
+  font-size: 1.75rem;
+}
+
+.education-content {
+  flex: 1;
+}
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: $spacing-xs;
+}
+
+.institution {
+  font-size: 1.125rem;
+  color: $color-primary;
+  margin-bottom: $spacing-md;
+}
+
+.education-meta {
+  display: flex;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+  margin-bottom: $spacing-sm;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+
+  @include mobile {
+    justify-content: center;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.education-description {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+

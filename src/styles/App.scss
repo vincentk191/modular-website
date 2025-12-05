@@ -1,0 +1,26 @@
+/**
+ * App Component Styles
+ * 
+ * Main application wrapper styles
+ */
+
+@import 'variables';
+@import 'mixins';
+
+.app {
+  min-height: 100vh;
+  @include transition(background-color);
+}
+
+main {
+  padding-top: 70px; // Account for fixed header
+}
+
+// Smooth transitions for theme switching
+.app,
+.app * {
+  @include transition(background-color);
+  @include transition(color);
+  @include transition(border-color);
+}
+

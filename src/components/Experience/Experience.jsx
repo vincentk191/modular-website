@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBriefcase, FaMapMarkerAlt, FaCalendar } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
-import './Experience.css';
+import './Experience.scss';
 
 /**
  * Experience Component

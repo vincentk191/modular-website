@@ -1,0 +1,49 @@
+/**
+ * ScrollToTop Component Styles
+ */
+
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  @include gradient-primary();
+  color: white;
+  border: none;
+  border-radius: $radius-full;
+  font-size: 1.25rem;
+  cursor: pointer;
+  @include flex-center();
+  box-shadow: $shadow-lg;
+  @include transition();
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-xl;
+  }
+
+  @include mobile {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

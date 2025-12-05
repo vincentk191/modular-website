@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
-import './Hero.css';
+import './Hero.scss';
 
 /**
  * Hero Component

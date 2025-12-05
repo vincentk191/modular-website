@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
-import './Contact.css';
+import './Contact.scss';
 
 /**
  * Contact Component

@@ -1,0 +1,178 @@
+/**
+ * Global Styles
+ * 
+ * Base styles, resets, and CSS variables for the entire application.
+ * This file imports variables and mixins, then sets up global styles.
+ */
+
+@import 'variables';
+@import 'mixins';
+
+// CSS Variables for runtime theming (still using CSS variables for dark mode)
+:root {
+  // Light Mode Colors
+  --color-primary: #{$color-primary};
+  --color-primary-dark: #{$color-primary-dark};
+  --color-secondary: #{$color-secondary};
+  --color-accent: #{$color-accent};
+  
+  --color-text: #{$color-text};
+  --color-text-light: #{$color-text-light};
+  --color-background: #{$color-background};
+  --color-background-alt: #{$color-background-alt};
+  --color-border: #{$color-border};
+  
+  --color-success: #{$color-success};
+  --color-error: #{$color-error};
+  --color-warning: #{$color-warning};
+  
+  // Spacing
+  --spacing-xs: #{$spacing-xs};
+  --spacing-sm: #{$spacing-sm};
+  --spacing-md: #{$spacing-md};
+  --spacing-lg: #{$spacing-lg};
+  --spacing-xl: #{$spacing-xl};
+  --spacing-2xl: #{$spacing-2xl};
+  
+  // Typography
+  --font-primary: #{$font-primary};
+  --font-mono: #{$font-mono};
+  
+  // Transitions
+  --transition-fast: #{$transition-fast};
+  --transition-base: #{$transition-base};
+  --transition-slow: #{$transition-slow};
+  
+  // Shadows
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+  --shadow-xl: #{$shadow-xl};
+  
+  // Border Radius
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-full: #{$radius-full};
+}
+
+// Dark Mode Colors
+.dark-mode {
+  --color-text: #{$color-text-dark};
+  --color-text-light: #{$color-text-light-dark};
+  --color-background: #{$color-background-dark};
+  --color-background-alt: #{$color-background-alt-dark};
+  --color-border: #{$color-border-dark};
+}
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Base Styles
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Container
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+// Section
+.section {
+  padding: $spacing-2xl 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: $spacing-xl;
+  color: var(--color-text);
+  
+  @include mobile {
+    font-size: 2rem;
+  }
+}
+
+.section-description {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto $spacing-xl;
+}
+
+// Highlight
+.highlight {
+  color: $color-primary;
+}
+
+// Buttons
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: $radius-md;
+  cursor: pointer;
+  @include transition();
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  @include gradient-primary();
+  color: white;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  
+  &:hover {
+    background: $color-primary;
+    color: white;
+  }
+}
+
+// Links
+a {
+  color: $color-primary;
+  text-decoration: none;
+  @include transition(color);
+  
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+// Responsive Section Padding
+@include mobile {
+  .section {
+    padding: $spacing-xl 0;
+  }
+}
+

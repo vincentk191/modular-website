@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
-import './Footer.css';
+import './Footer.scss';
 
 /**
  * Footer Component

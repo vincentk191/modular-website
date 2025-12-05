@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
-import './Header.css';
+import './Header.scss';
 
 /**
  * Header Component
