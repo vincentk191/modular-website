@@ -26,7 +26,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(180deg, $color-primary, $color-secondary);
+    background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
 
     @include mobile {
       left: 10px;
@@ -84,7 +84,7 @@
 
 .company {
   font-size: 1.25rem;
-  color: $color-primary;
+  color: var(--color-primary);
   margin-bottom: $spacing-md;
 }
 
@@ -118,7 +118,7 @@
       content: '▹';
       position: absolute;
       left: 0;
-      color: $color-primary;
+      color: var(--color-primary);
       font-weight: bold;
     }
   }

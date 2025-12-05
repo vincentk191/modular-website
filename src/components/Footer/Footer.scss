@@ -49,7 +49,7 @@
 }
 
 .heart {
-  color: $color-error;
+  color: var(--color-error);
   animation: heartbeat 1.5s ease-in-out infinite;
 }
 

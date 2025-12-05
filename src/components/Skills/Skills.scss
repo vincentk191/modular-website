@@ -33,7 +33,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: $spacing-lg;
-  color: $color-primary;
+  color: var(--color-primary);
   border-bottom: 2px solid var(--color-border);
   padding-bottom: $spacing-sm;
 }
