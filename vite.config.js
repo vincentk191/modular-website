@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/modular-website/', // Change this to your repository name
+  base: '/modular-website/', // Must match your repository name exactly
   build: {
     outDir: 'dist',
   },
