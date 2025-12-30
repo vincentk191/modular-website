@@ -10,31 +10,30 @@ export const portfolioData = {
   // Personal Information
   personal: {
     name: "Vincent Kesumo",
-    title: "Full Stack Developer",
-    tagline: "Building scalable and modular web applications",
-    email: "your.email@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "Your City, Country",
+    title: "Computer Science Engineer",
+    tagline: "Building sustainable solutions for your business",
+    email: "vincent.",
+    phone: "+62 812-3456-7890",
+    location: "Jakarta, Indonesia",
     avatar: "https://via.placeholder.com/200", // Replace with your image URL
   },
 
   // Social Links
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername",
-    portfolio: "https://yourwebsite.com",
+    github: "https://github.com/vincentk191",
+    linkedin: "https://linkedin.com/in/vincent-kesumo-60155a148",
+    portfolio: "https://vincentk191.github.io/modular-website/",
   },
 
   // About Section
   about: {
     title: "About Me",
     description: [
-      "I'm a passionate full stack developer with experience in building modular and scalable web applications. I specialize in creating clean, maintainable code and elegant user interfaces.",
-      "With a strong foundation in both frontend and backend technologies, I enjoy solving complex problems and learning new technologies. I believe in writing code that is not only functional but also easy to understand and maintain.",
-      "When I'm not coding, I enjoy contributing to open source projects and sharing knowledge with the developer community."
+      "I am a Computer Science Engineer with a passion for optimizing business processes and discovering new technologies.",
+      "I have experience in building software solutions that aimed at connecting and scaling with other systems as well as maintaining and improving existing projects",
+      "When I'm not coding, I enjoy learning new technologies and playing video games with my friends"
     ],
-    image: "https://via.placeholder.com/400x300", // Replace with your image URL
+    image: "https://avatars.githubusercontent.com/u/32392302?v=4", // Replace with your image URL
   },
 
   // Skills Section
@@ -46,9 +45,7 @@ export const portfolioData = {
         items: [
           { name: "React", level: 90 },
           { name: "JavaScript/ES6+", level: 95 },
-          { name: "HTML5 & CSS3", level: 90 },
-          { name: "TypeScript", level: 80 },
-          { name: "Vue.js", level: 75 },
+          { name: "HTML5 & CSS3", level: 90 }
         ]
       },
       {
@@ -59,6 +56,12 @@ export const portfolioData = {
           { name: "PostgreSQL", level: 80 },
           { name: "MongoDB", level: 75 },
           { name: "RESTful APIs", level: 90 },
+          { name: "Java", level: 80 },
+          { name: "Spring Boot Framework", level: 70 },
+          { name: "Maven", level: 60 },
+          { name: "Python", level: 60 },
+          { name: "C++", level: 50 },
+          { name: "SQL", level: 90 },
         ]
       },
       {
@@ -66,7 +69,7 @@ export const portfolioData = {
         items: [
           { name: "Git & GitHub", level: 90 },
           { name: "Docker", level: 70 },
-          { name: "AWS", level: 65 },
+          { name: "Azure DevOps", level: 70 },
           { name: "CI/CD", level: 75 },
           { name: "Agile/Scrum", level: 80 },
         ]
@@ -79,41 +82,29 @@ export const portfolioData = {
     title: "Experience",
     items: [
       {
-        company: "Tech Company Inc.",
-        position: "Senior Full Stack Developer",
-        duration: "2022 - Present",
-        location: "Remote",
+        company: "Brunel",
+        position: "Junior Software Engineer",
+        duration: "2022 - 2023",
+        location: "On-Site / Remote",
         description: [
-          "Led development of modular web applications using React and Node.js",
-          "Implemented scalable backend services with PostgreSQL and Express",
-          "Mentored junior developers and conducted code reviews",
-          "Improved application performance by 40% through optimization"
+          "Worked on ABN AMRO project in migrating from their legacy system to the on-cloud system",
+          "Initializing and maintaining the cloud-based application for UI/UX and backend API",
+          "Proficient in using Java, Spring Boot Framework, Maven, SQL, and Azure DevOps",
+          "Worked in cross functional teams to adapt the legacy functionality to Java and Spring Boot"
         ]
       },
       {
-        company: "Startup Solutions",
-        position: "Full Stack Developer",
-        duration: "2020 - 2022",
-        location: "City, Country",
+        company: "ABN AMRO",
+        position: "IT Engineer",
+        duration: "2023 - Current",
+        location: "On-Site / Remote",
         description: [
-          "Built responsive web applications from scratch",
-          "Developed RESTful APIs and integrated third-party services",
-          "Collaborated with design team to implement pixel-perfect UIs",
-          "Maintained and improved existing codebase"
+          "Continued previous work on the ABN AMRO project as an internal employee",
+          "Developed microservices and helped as an expert in adapting the cloud based applications to other systems",
+          "Worked extensively in SQL to extrapolate and transform data for analysis and reporting",
+          "Maintained and improved existing codebase in containerizing the applications for deployment"
         ]
       },
-      {
-        company: "Digital Agency",
-        position: "Junior Developer",
-        duration: "2018 - 2020",
-        location: "City, Country",
-        description: [
-          "Assisted in development of client websites",
-          "Learned best practices for code quality and version control",
-          "Participated in agile development processes",
-          "Contributed to open source projects"
-        ]
-      }
     ]
   },
 
@@ -122,11 +113,39 @@ export const portfolioData = {
     title: "Education",
     items: [
       {
-        institution: "University Name",
-        degree: "Bachelor of Science in Computer Science",
+        institution: "Vrije Universiteit Amsterdam (VU Amsterdam)",
+        degree: "Bachelor of Technology in Computer Science",
+        duration: "2019 - 2022",
+        location: "Amsterdam, Netherlands",
+        description: "Focus on software engineering and web development"
+      },
+      {
+        institution: "Delft University of Technology (TU Delft)",
+        degree: "Bachelor of Engineering in Computer Science",
+        duration: "2018 - 2019",
+        location: "Delft, Netherlands",
+        description: "Focus on software engineering and web development but was not able to complete the degree due to personal reasons"
+      },
+      {
+        institution: "New York Code + Design Academy",
+        degree: "Certificate in Full Stack Development",
         duration: "2014 - 2018",
+        location: "Amsterdam, Netherlands",
+        description: "Focus on full stack web development using React, Node.js, PostgreSQL, Express, and MongoDB"
+      },
+      {
+        institution: "UNSW",
+        degree: "Bachelor of Engineering in Electrical and Electronics Engineering",
+        duration: "2017 - 2017",
         location: "City, Country",
         description: "Focus on software engineering and web development"
+      },
+      {
+        institution: "Gandhi Memorial International School",
+        degree: "High School Diploma with IGCSE",
+        duration: "2004 - 2015",
+        location: "Jakarta, Indonesia",
+        description: "Focus on High School Education with IGCSE"
       }
     ]
   },
