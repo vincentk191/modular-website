@@ -15,7 +15,7 @@ export const portfolioData = {
     email: "vincent.kesumo@gmail.com",
     phone: "+62 812-3456-7890",
     location: "Jakarta, Indonesia",
-    avatar: "https://avatars.githubusercontent.com/u/32392302?v=4", // Replace with your image URL
+    avatar: "https://scontent-ams2-1.cdninstagram.com/v/t51.2885-19/566286292_18541677349025263_5605960959709836054_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGVHB06hdHJU6s7ElZgOTl-4O4dyTqW8TgyYA_JMSYgohBTNADjpjY3IhuIfdLE5Dc&_nc_ohc=sRuUGCGrupAQ7kNvwEIRPJi&_nc_gid=CwpkUMG-QGmdpVk7jIvsPg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Afr_BXkl1--HHH7q9vxJL73CtU02pkkLpIzfLu84nMtKVw&oe=695CDCA3&_nc_sid=7a9f4b", // Replace with your image URL
   },
 
   // Social Links
