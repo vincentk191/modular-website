@@ -12,10 +12,10 @@ export const portfolioData = {
     name: "Vincent Kesumo",
     title: "Computer Science Engineer",
     tagline: "Building sustainable solutions for your business",
-    email: "vincent.",
+    email: "vincent.kesumo@gmail.com",
     phone: "+62 812-3456-7890",
     location: "Jakarta, Indonesia",
-    avatar: "https://via.placeholder.com/200", // Replace with your image URL
+    avatar: "https://avatars.githubusercontent.com/u/32392302?v=4", // Replace with your image URL
   },
 
   // Social Links
@@ -43,9 +43,9 @@ export const portfolioData = {
       {
         name: "Frontend",
         items: [
-          { name: "React", level: 90 },
-          { name: "JavaScript/ES6+", level: 95 },
-          { name: "HTML5 & CSS3", level: 90 }
+          { name: "React", level: 40 },
+          { name: "JavaScript/ES6+", level: 60 },
+          { name: "HTML5 & CSS3", level: 70 }
         ]
       },
       {
@@ -137,7 +137,7 @@ export const portfolioData = {
         institution: "UNSW",
         degree: "Bachelor of Engineering in Electrical and Electronics Engineering",
         duration: "2017 - 2017",
-        location: "City, Country",
+        location: "Sydney, Australia",
         description: "Focus on software engineering and web development"
       },
       {
