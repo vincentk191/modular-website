@@ -12,6 +12,7 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ScrollProgress from './components/ScrollProgress/ScrollProgress';
 import './styles/App.scss';
 
 /**
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className={`app ${isDarkMode ? 'dark-mode' : ''}`}>
+      <ScrollProgress />
       <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <main>
         <Hero />

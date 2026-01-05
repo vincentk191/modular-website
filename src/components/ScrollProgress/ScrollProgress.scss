@@ -1,0 +1,18 @@
+/**
+ * Scroll Progress Indicator Styles
+ */
+
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  z-index: 10000;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

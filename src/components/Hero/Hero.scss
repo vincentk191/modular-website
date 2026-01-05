@@ -45,9 +45,28 @@
   font-size: 2rem;
   color: var(--color-text-light);
   margin-bottom: $spacing-md;
+  min-height: 2.5rem; // Prevent layout shift during typing
 
   @include tablet {
     font-size: 1.5rem;
+    min-height: 2rem;
+  }
+
+  .cursor {
+    display: inline-block;
+    margin-left: 2px;
+    color: var(--color-primary);
+    animation: blink 1s infinite;
+    font-weight: 300;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
   }
 }
 

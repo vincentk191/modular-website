@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
+import useLazyImage from '../../hooks/useLazyImage';
 import './Projects.scss';
 
 /**
@@ -19,10 +20,30 @@ const Projects = () => {
 
         <div className="projects-grid">
           {projects.items.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-image">
-                <img src={project.image} alt={project.name} />
-                <div className="project-overlay">
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/**
+ * ProjectCard Component with Lazy Loading
+ */
+const ProjectCard = ({ project }) => {
+  const [imageSrc, imageRef, isLoaded] = useLazyImage(project.image);
+
+  return (
+    <div className="project-card">
+      <div className="project-image">
+        <img 
+          ref={imageRef}
+          src={imageSrc} 
+          alt={project.name}
+          className={isLoaded ? 'loaded' : 'loading'}
+        />
+        <div className="project-overlay">
                   <div className="project-links">
                     {project.github && (
                       <a
@@ -50,23 +71,19 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="project-content">
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-description">{project.description}</p>
-                
-                <div className="project-technologies">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+      <div className="project-content">
+        <h3 className="project-name">{project.name}</h3>
+        <p className="project-description">{project.description}</p>
+        
+        <div className="project-technologies">
+          {project.technologies.map((tech, techIndex) => (
+            <span key={techIndex} className="tech-tag">
+              {tech}
+            </span>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -14,6 +14,7 @@ import './Header.scss';
 const Header = ({ isDarkMode, toggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +23,49 @@ const Header = ({ isDarkMode, toggleTheme }) => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Active section highlighting using Intersection Observer
+  useEffect(() => {
+    const navItems = [
+      'hero',
+      'about',
+      'statistics',
+      'skills',
+      'experience',
+      'certifications',
+      'projects',
+      'testimonials',
+      'contact',
+    ];
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe all sections
+    navItems.forEach((itemId) => {
+      const element = document.getElementById(itemId);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   const scrollToSection = (sectionId) => {
@@ -57,7 +101,7 @@ const Header = ({ isDarkMode, toggleTheme }) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="nav-link"
+                className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
               >
                 {item.label}
               </button>

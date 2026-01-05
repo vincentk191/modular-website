@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaDownload } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
+import useTypewriter from '../../hooks/useTypewriter';
 import './Hero.scss';
 
 /**
@@ -15,6 +16,19 @@ import './Hero.scss';
 const Hero = () => {
   const { personal, social, resume } = portfolioData;
 
+  // Typewriter animation for subtitle
+  const typewriterText = useTypewriter(
+    [
+      personal.title,
+      'Full Stack Developer',
+      'Problem Solver',
+      'Tech Enthusiast'
+    ],
+    100, // typing speed (ms per character)
+    50,  // deleting speed (ms per character)
+    2000 // delay before deleting (ms)
+  );
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -27,7 +41,10 @@ const Hero = () => {
             <h1 className="hero-title">
               Hi, I'm <span className="highlight">{personal.name}</span>
             </h1>
-            <h2 className="hero-subtitle">{personal.title}</h2>
+            <h2 className="hero-subtitle">
+              {typewriterText}
+              <span className="cursor">|</span>
+            </h2>
             <p className="hero-tagline">{personal.tagline}</p>
 
             <div className="hero-buttons">
