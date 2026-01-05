@@ -66,6 +66,16 @@
   @include tablet {
     justify-content: center;
   }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    svg {
+      font-size: 0.875rem;
+    }
+  }
 }
 
 .social-links {

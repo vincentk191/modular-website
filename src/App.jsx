@@ -3,9 +3,12 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
+import Statistics from './components/Statistics/Statistics';
 import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
+import Certifications from './components/Certifications/Certifications';
 import Projects from './components/Projects/Projects';
+import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
@@ -30,10 +33,13 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Statistics />
         <Skills />
         <Experience />
         <Education />
+        <Certifications />
         <Projects />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />

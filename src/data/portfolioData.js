@@ -186,6 +186,97 @@ export const portfolioData = {
     title: "Get In Touch",
     description: "I'm always interested in hearing about new opportunities and projects. Feel free to reach out!",
     buttonText: "Send Message"
+  },
+
+  // Resume/CV Download
+  resume: {
+    downloadUrl: "/resume.pdf", // Place your resume PDF in the public folder
+    buttonText: "Download Resume"
+  },
+
+  // Statistics Section
+  statistics: {
+    title: "Achievements",
+    items: [
+      { 
+        label: "Years of Experience", 
+        value: 3, 
+        icon: "FaBriefcase",
+        suffix: "+"
+      },
+      { 
+        label: "Projects Completed", 
+        value: 20, 
+        icon: "FaProjectDiagram",
+        suffix: "+"
+      },
+      { 
+        label: "Technologies Mastered", 
+        value: 15, 
+        icon: "FaCode",
+        suffix: "+"
+      },
+      { 
+        label: "Happy Collaborators", 
+        value: 10, 
+        icon: "FaUsers",
+        suffix: "+"
+      }
+    ]
+  },
+
+  // Certifications Section
+  certifications: {
+    title: "Certifications",
+    items: [
+      {
+        name: "AWS Certified Solutions Architect",
+        issuer: "Amazon Web Services",
+        date: "2023",
+        credentialId: "ABC123",
+        verificationUrl: "https://example.com/verify",
+        image: "https://via.placeholder.com/150"
+      },
+      {
+        name: "Google Cloud Professional",
+        issuer: "Google Cloud",
+        date: "2022",
+        credentialId: "XYZ789",
+        verificationUrl: "https://example.com/verify",
+        image: "https://via.placeholder.com/150"
+      }
+    ]
+  },
+
+  // Testimonials Section
+  testimonials: {
+    title: "What People Say",
+    items: [
+      {
+        name: "John Doe",
+        role: "Senior Developer",
+        company: "Tech Corp",
+        image: "https://via.placeholder.com/100",
+        quote: "Vincent is an exceptional developer with great attention to detail and problem-solving skills. His work on our project was outstanding.",
+        linkedin: "https://linkedin.com/in/johndoe"
+      },
+      {
+        name: "Jane Smith",
+        role: "Project Manager",
+        company: "Innovate Inc",
+        image: "https://via.placeholder.com/100",
+        quote: "Working with Vincent was a pleasure. He consistently delivered high-quality code and was always willing to go the extra mile.",
+        linkedin: "https://linkedin.com/in/janesmith"
+      },
+      {
+        name: "Mike Johnson",
+        role: "CTO",
+        company: "StartupXYZ",
+        image: "https://via.placeholder.com/100",
+        quote: "Vincent's technical expertise and collaborative approach made him an invaluable member of our team. Highly recommended!",
+        linkedin: "https://linkedin.com/in/mikejohnson"
+      }
+    ]
   }
 };
 

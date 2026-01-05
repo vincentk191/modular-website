@@ -35,9 +35,12 @@ const Header = ({ isDarkMode, toggleTheme }) => {
   const navItems = [
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'statistics', label: 'Achievements' },
     { id: 'skills', label: 'Skills' },
     { id: 'experience', label: 'Experience' },
+    { id: 'certifications', label: 'Certifications' },
     { id: 'projects', label: 'Projects' },
+    { id: 'testimonials', label: 'Testimonials' },
     { id: 'contact', label: 'Contact' },
   ];
 

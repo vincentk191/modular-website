@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaDownload } from 'react-icons/fa';
 import { portfolioData } from '../../data/portfolioData';
 import './Hero.scss';
 
@@ -10,9 +10,10 @@ import './Hero.scss';
  * - Personal introduction
  * - Social links
  * - Call-to-action buttons
+ * - Resume download
  */
 const Hero = () => {
-  const { personal, social } = portfolioData;
+  const { personal, social, resume } = portfolioData;
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -33,6 +34,15 @@ const Hero = () => {
               <button className="btn btn-primary" onClick={scrollToContact}>
                 Get In Touch
               </button>
+              {resume && resume.downloadUrl && (
+                <a
+                  href={resume.downloadUrl}
+                  download
+                  className="btn btn-secondary"
+                >
+                  <FaDownload /> {resume.buttonText || 'Download Resume'}
+                </a>
+              )}
               <a
                 href={social.github}
                 target="_blank"
